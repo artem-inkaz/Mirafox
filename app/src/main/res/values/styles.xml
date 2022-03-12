@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="BottomNavigationView" parent="@style/TextAppearance.AppCompat.Caption">
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="BottomNavigationView.Active" parent="@style/TextAppearance.AppCompat.Caption">
+        <item name="android:textSize">11sp</item>
+    </style>
+
+    <style name="page_under_construction_style">
+        <item name="android:layout_marginTop">@dimen/margin_text_under_construction</item>
+        <item name="android:text">@string/page_under_construction</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">@dimen/text_size_page_under_construction</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/sfprodisplay_regular</item>
+    </style>
+    <style name="tab_style">
+        <item name="android:background">@drawable/outlined_button_shape_gray</item>
+        <item name="android:layout_margin">@dimen/status_margin</item>
+        <item name="android:padding">@dimen/status_padding</item>
+        <item name="android:paddingStart">@dimen/status_padding_start_end</item>
+        <item name="android:paddingEnd">@dimen/status_padding_start_end</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">@dimen/status_text_btn</item>
+        <item name="android:fontFamily">@font/sfprodisplay_regular</item>
+    </style>
+
+</resources>
