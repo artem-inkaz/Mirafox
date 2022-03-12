@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+>
+    <item
+        android:id="@+id/action_chats"
+        android:enabled="true"
+        android:title="@string/chats"
+        android:icon="@drawable/chat"
+        />
+    <item
+        android:id="@+id/action_exchange"
+        android:enabled="true"
+        android:title="@string/exchange"
+        android:icon="@drawable/exchange"
+        />
+    <item
+        android:id="@+id/action_orders"
+        android:enabled="true"
+        android:title="@string/orders"
+        android:icon="@drawable/orders"
+        />
+    <item
+        android:id="@+id/action_notifications"
+        android:enabled="true"
+        android:title="@string/notification"
+
+        android:icon="@drawable/notifications"
+        />
+    <item
+        android:id="@+id/action_profile"
+        android:enabled="true"
+        android:icon="@drawable/profile"
+        android:title="@string/profile"
+        />
+</menu>

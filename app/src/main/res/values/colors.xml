@@ -7,4 +7,13 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="button_shape">#4CD964</color>
+    <color name="button_outline">#32A5FC</color>
+    <color name="text_price">#4CD964</color>
+    <color name="unselected_menu">#B3B3B3</color>
+    <color name="toolbar_color">#F6F6F6</color>
+    <color name="text_background">#B3B3B3</color>
+    <color name="menu">#B3B3B3</color>
+    <color name="outline_btn_inactive">#B3B3B3</color>
+    <color name="active_menu">#5E5E5E</color>
 </resources>

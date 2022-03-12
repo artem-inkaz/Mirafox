@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="1dp"
+    android:layout_marginBottom="2dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/user_photo"
+        android:layout_width="@dimen/settings_user_photo_width"
+        android:layout_height="@dimen/settings_btn_change_photo_height"
+        android:layout_marginStart="@dimen/margin_start_image_order"
+        android:layout_marginTop="@dimen/margin_top_image_order"
+        android:src="@drawable/choose_photo_overlay"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_start_user_order"
+        android:layout_marginTop="@dimen/margin_top_user_order"
+        tools:text="@string/tools_user"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_user_order"
+        android:fontFamily="@font/sfprodisplay_bold"
+        app:layout_constraintStart_toEndOf="@+id/user_photo"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/time_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top_date_order"
+        android:fontFamily="@font/sfprodisplay_regular"
+        tools:text="@string/tools_text_date_order"
+        android:textColor="@color/menu"
+        android:textSize="@dimen/textt_size_date_order"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/guideline2"
+        tools:layout_editor_absoluteX="316dp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/description_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top_layout_description_order"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/user_photo">
+
+        <TextView
+            android:id="@+id/description_order"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_horizontal_description_order"
+            android:layout_marginStart="@dimen/margin_start_description_order"
+            android:layout_marginEnd="@dimen/margin_end_description_order"
+            android:gravity="left"
+            android:fontFamily="@font/sfprodisplay_bold"
+            tools:text="Описание моего первого заказа срочно нужна работа.Описание моего первого заказа срочно нужна работа"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_description_order"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/go_to"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/go_to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_end_go_to"
+            android:foregroundGravity="center"
+            android:src="@drawable/ic_go"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/menu" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/price_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top_price_order"
+        android:layout_marginBottom="@dimen/margin_bottom_price_order"
+        tools:text="@string/tools_text_price"
+        android:textColor="@color/text_price"
+        android:textSize="@dimen/text_size_price_order"
+        android:fontFamily="@font/sfprodisplay_bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/guideline2"
+        app:layout_constraintTop_toBottomOf="@id/description_container"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/status_order_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_start_status_order"
+        android:layout_marginTop="@dimen/margin_top_status_order"
+        android:layout_marginBottom="@dimen/margin_bottom_status_order"
+        android:background="@drawable/outlined_button_shape"
+        android:foreground="?android:selectableItemBackground"
+        android:fontFamily="@font/sfprodisplay_regular"
+        android:gravity="center"
+        android:paddingVertical="@dimen/paddingvertical_status_order"
+        android:paddingStart="@dimen/padding_start_status_order"
+        android:paddingEnd="@dimen/padding_end_status_order"
+        android:text="@string/tools_text_status"
+        android:textAllCaps="false"
+        android:textColor="@color/button_outline"
+        android:textSize="@dimen/text_size_status_order"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/description_container"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/menu"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="381dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
